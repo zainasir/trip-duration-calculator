@@ -5,7 +5,6 @@ import { differenceInDays } from "date-fns";
 
 interface Stay {
   id: string;
-  location: string;
   startDate: Date;
   endDate: Date;
 }
@@ -50,7 +49,6 @@ const Index = () => {
           {stays.map((stay) => (
             <StayCard
               key={stay.id}
-              location={stay.location}
               startDate={stay.startDate}
               endDate={stay.endDate}
               onDelete={() => handleDeleteStay(stay.id)}
