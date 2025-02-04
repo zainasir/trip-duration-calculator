@@ -45,9 +45,6 @@ export const StayForm = ({ onAddStay }: StayFormProps) => {
               selected={startDate}
               onSelect={setStartDate}
               initialFocus
-              fromYear={2020}
-              toYear={2030}
-              captionLayout="dropdown"
             />
           </PopoverContent>
         </Popover>
@@ -71,9 +68,6 @@ export const StayForm = ({ onAddStay }: StayFormProps) => {
               selected={endDate}
               onSelect={setEndDate}
               initialFocus
-              fromYear={2020}
-              toYear={2030}
-              captionLayout="dropdown"
             />
           </PopoverContent>
         </Popover>
