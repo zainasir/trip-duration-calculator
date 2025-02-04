@@ -28,7 +28,7 @@ export const StayForm = ({ onAddStay }: StayFormProps) => {
         <div className="relative w-full">
           <DatePicker
             selected={startDate}
-            onChange={(date) => setStartDate(date as Date)}
+            onChange={(date: Date) => setStartDate(date)}
             selectsStart
             startDate={startDate}
             endDate={endDate}
@@ -50,7 +50,7 @@ export const StayForm = ({ onAddStay }: StayFormProps) => {
         <div className="relative w-full">
           <DatePicker
             selected={endDate}
-            onChange={(date) => setEndDate(date as Date)}
+            onChange={(date: Date) => setEndDate(date)}
             selectsEnd
             startDate={startDate}
             endDate={endDate}
